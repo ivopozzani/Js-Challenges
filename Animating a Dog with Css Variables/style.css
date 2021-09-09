@@ -1,0 +1,11 @@
+body {
+  background-color: dodgerblue;
+}
+
+.dog {
+  --x: 0px;
+  --y: 0px;
+
+  width: 300px;
+  transform: translateX(var(--x)) translateY(var(--y));
+}
