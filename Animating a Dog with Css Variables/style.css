@@ -2,10 +2,23 @@ body {
   background-color: dodgerblue;
 }
 
+h1,
+ol {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
 .dog {
   --x: 0px;
   --y: 0px;
-
+  --rotate: 0deg;
+  --rotateY: 0deg;
+  display: flex;
+  margin: auto;
+  position: relative;
+  z-index: 5;
   width: 300px;
-  transform: translateX(var(--x)) translateY(var(--y));
+  transform: translateX(var(--x)) translateY(var(--y)) rotate(var(--rotate))
+    rotateY(var(--rotateY));
 }
