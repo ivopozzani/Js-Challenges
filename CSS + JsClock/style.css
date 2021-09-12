@@ -1,0 +1,30 @@
+body {
+  background-color: darkblue;
+}
+
+.face {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 100vh;
+  height: 100vh;
+  border-color: rgb(207, 202, 180);
+  border-style: solid;
+  border-width: 10px;
+  border-radius: 100%;
+  margin: auto;
+}
+
+.min,
+.hour,
+.sec {
+  position: absolute;
+  border-style: solid;
+  border-color: black;
+  width: 350px;
+  transform: rotate(90deg);
+  transform-origin: 100%;
+}
+
+.hour {
+}
