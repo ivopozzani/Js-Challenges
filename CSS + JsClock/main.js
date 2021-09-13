@@ -5,10 +5,12 @@ let hour = Math.floor(min/60)
 let timer = null
 const secHand = document.querySelector('.sec')
 
-function runClock () {
-secHand.setAttribute('style', `transform: rotate(${sec*6}deg);`);}
+//function runClock () {
+  secHand.style.transform[`rotate (${sec*6}deg); `]
+ console.log(secHand.style.transform)
+//secHand.setAttribute('style', `transform: rotate(${sec*6}deg);`);}
 
-function initClock (){
-return setInterval(runClock(), 1000)}
+// function initClock (){
+// return setInterval(runClock(), 1000)}
   
-initClock()
+// initClock()
