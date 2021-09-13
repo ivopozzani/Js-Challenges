@@ -1,16 +1,18 @@
-let timeMs = Date.now();
-let sec = Math.floor(timeMs/1000)
-let min = Math.floor(sec/60)
-let hour = Math.floor(min/60)
-let timer = null
-const secHand = document.querySelector('.sec')
+const run = setInterval(runClock, 1000);
 
-//function runClock () {
-  secHand.style.transform[`rotate (${sec*6}deg); `]
- console.log(secHand.style.transform)
-//secHand.setAttribute('style', `transform: rotate(${sec*6}deg);`);}
+function runClock(){
+const timeMs = Date.now();
+const sec = Math.floor(timeMs/1000);
+const min = Math.floor(sec/60);
+const hour = Math.floor(min/60);
 
-// function initClock (){
-// return setInterval(runClock(), 1000)}
-  
-// initClock()
+const secHand = document.querySelector('.sec');
+const minHand = document.querySelector('.min');
+const hourHand = document.querySelector('.hour');
+
+ secHand.setAttribute('style', `transform: rotate(${sec*6}deg);`);
+ minHand.setAttribute('style', `transform: rotate(${min*6}deg);`);
+ hourHand.setAttribute('style', `transform: rotate(${hour*6}deg);`);
+}
+
+
