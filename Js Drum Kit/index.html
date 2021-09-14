@@ -5,76 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Drum!</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <img src="audience.jpg" alt="audience" />
     <div class="flex">
-      <div class="clap">
+      <div data-key="65" class="key">
         <h1>A</h1>
         <p>CLAP</p>
-        <audio>
-          <source src="sounds/clap.wav" type="audio/wav" />
-        </audio>
       </div>
-      <div class="hihat">
+      <div data-key="83" class="key">
         <h1>S</h1>
         <p>HIHAT</p>
-        <audio>
-          <source src="sounds/hihat.wav" type="audio/wav" />
-        </audio>
       </div>
-      <div class="kick">
+      <div data-key="68" class="key">
         <h1>D</h1>
         <p>KICK</p>
-        <audio>
-          <source src="sounds/kick.wav" type="audio/wav" />
-        </audio>
       </div>
-      <div class="openhat">
+      <div data-key="70" class="key">
         <h1>F</h1>
         <p>OPENHAT</p>
-        <audio>
-          <source src="sounds/openhat.wav" type="audio/wav" />
-        </audio>
       </div>
-      <div class="boom">
+      <div data-key="71" class="key">
         <h1>G</h1>
         <p>BOOM</p>
-        <audio>
-          <source src="sounds/boom.wav" type="audio/wav" />
-        </audio>
       </div>
-      <div class="ride">
+      <div data-key="72" class="key">
         <h1>H</h1>
         <p>RIDE</p>
-        <audio>
-          <source src="sounds/ride.wav" type="audio/wav" />
-        </audio>
       </div>
-      <div class="snare">
+      <div data-key="74" class="key">
         <h1>J</h1>
         <p>SNARE</p>
-        <audio>
-          <source src="sounds/snare.wav" type="audio/wav" />
-        </audio>
       </div>
-      <div class="tom">
+      <div data-key="75" class="key">
         <h1>K</h1>
         <p>TOM</p>
-        <audio>
-          <source src="sounds/tom.wav" type="audio/wav" />
-        </audio>
       </div>
-      <div class="tink">
+      <div data-key="76" class="key">
         <h1>L</h1>
         <p>TINK</p>
-        <audio>
-          <source src="sounds/tink.wav" type="audio/wav" />
-        </audio>
       </div>
     </div>
 
     <script src="main.js"></script>
   </body>
+
+  <audio data-key="65" src="sounds/clap.wav" type="audio/wav"></audio>
+  <audio data-key="83" src="sounds/hihat.wav" type="audio/wav"></audio>
+  <audio data-key="68" src="sounds/kick.wav" type="audio/wav"></audio>
+  <audio data-key="70" src="sounds/openhat.wav" type="audio/wav"></audio>
+  <audio data-key="71" src="sounds/boom.wav" type="audio/wav"></audio>
+  <audio data-key="72" src="sounds/ride.wav" type="audio/wav"></audio>
+  <audio data-key="74" src="sounds/snare.wav" type="audio/wav"></audio>
+  <audio data-key="75" src="sounds/tom.wav" type="audio/wav"></audio>
+  <audio data-key="76" src="sounds/tink.wav" type="audio/wav"></audio>
 </html>
