@@ -21,15 +21,18 @@ body {
 .sec {
   position: absolute;
   z-index: 1;
+  width: 19.6rem;
   border-style: solid;
   border-color: black;
   border-radius: 100%;
   transform-origin: 100%;
-  width: 19.5rem;
+  transform: rotate(90deg);
+  transition: 0.2s;
+  transition-timing-function: cubic-bezier(0.03, 3.01, 0.17, 1);
 }
 
 .img {
   z-index: 0;
-  width: 30rem;
+  width: 25rem;
   margin: auto;
 }
