@@ -1,25 +1,10 @@
-const spacing = document.querySelector('#spacing')
-const blur = document.querySelector('#blur')
-const baseColor = document.querySelector('#base-color')
+const inputs = document.querySelectorAll('.flex input')
 
-function handleSpacing (e) {
-  const newSpacing = e.target.value
-  document.documentElement.style.setProperty('--translate', `${newSpacing}%`);
+function handleChange () {
+  const dataSize = this.dataset.size || '';
+
+   document.documentElement.style.setProperty(`--${this.id}`, `${this.value}` + `${dataSize}`);  
 }
 
-function handleBlur (e) {
-  const newBlur = e.target.value
-  document.documentElement.style.setProperty('--blur', `${newBlur}px`);
-}
-
-function handlebaseColor (e) {
-  const newBaseColor = e.target.value
-  document.documentElement.style.setProperty('--base-color', `${newBaseColor}`);
-}
-
-spacing.addEventListener('change', handleSpacing)
-blur.addEventListener('change', handleBlur)
-baseColor.addEventListener('change', handlebaseColor)
-
-
-
+inputs.forEach(input => (input.addEventListener('change', handleChange)))
+inputs.forEach(input => (input.addEventListener('mousemove', handleChange)))

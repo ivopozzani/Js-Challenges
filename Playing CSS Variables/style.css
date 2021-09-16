@@ -4,9 +4,9 @@
 }
 
 :root {
-  --base-color: rgb(164, 241, 76);
+  --base: #a4f14c;
   --blur: 0px;
-  --translate: 0%;
+  --spacing: 0%;
 }
 
 body {
@@ -22,7 +22,7 @@ h1 {
 }
 
 span {
-  color: var(--base-color);
+  color: var(--base);
 }
 
 .flex {
@@ -45,7 +45,7 @@ span {
 }
 
 .backImg {
-  background-color: var(--base-color);
+  background-color: var(--base);
   width: 900px;
   margin: auto;
 }
@@ -56,5 +56,5 @@ img {
   margin: auto;
   padding: 20px;
   filter: blur(var(--blur));
-  transform: translate(var(--translate), var(--translate));
+  transform: translate(var(--spacing), var(--spacing));
 }
